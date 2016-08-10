@@ -1,0 +1,261 @@
+body{
+		background:#dedede; 
+		color:#242424;
+	
+}
+
+
+/*=========================*/
+div.dontmove{
+	margin-left:150px;
+	height: 130px;
+	width: 550px;
+}
+div.header{
+	height:85px;
+	width:100%;
+	background-image: url("../../../images/header-bg.png") ;
+}
+a{
+
+text-decoration:none;
+
+}
+
+div.logo{
+	height:65px;
+	width:280px;
+	background-image: url("../../../images/logo.png") ;
+	float: left;
+}
+div.header_title{
+	padding-top:10px;
+	margin-left:10px;
+	color:#dddd00;
+	font-size: 40px;
+	font-style: italic;
+	float: left;
+}
+div.wrapper{
+		height:90px;
+	width:100%;
+	font-size: 100%;
+	font-style: normal;
+}
+div.bottom_left{
+	margin-left: 150px;
+	padding-top:30px;
+	height: 50px;
+	width: 200px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:80%;
+	color:#fff;/*<!-- ×ÖÌåÑÕÉ«-->*/
+}
+div.bottom{
+	margin-top:630px;
+	height:90px;
+	width:100%;
+	background-color: #212121;
+	font-size: 100%;
+}
+div.allPlace{
+	width: 740px;
+	height: 570px;
+	margin-left:50px;
+	margin-top:5px;
+	margin-bottom:10px;
+	float:left;
+	background-image:url("../../style/image/background.png");
+	
+}
+div.messages{
+	width: 440px;
+	height: 570px;
+	margin-left:50px;
+	margin-top:5px;
+	margin-bottom:10px;
+	float:left;
+	background-image:url("../../style/image/background.png");
+}
+iframe.msg_frame{
+	width: 400px;
+	height: 400px;
+	margin-top:15px;
+	margin-left:20px;
+	
+}
+div.msg_textarea{
+	width: 400px;
+	height: 150px;
+	margin-top:15px;
+	margin-left:20px;
+}
+input.msg_send_btn{
+	width: 50px;
+	height: 35px;
+	margin-top:10px;
+	margin-left:20px;
+	background:#666600;
+	cursor:pointer;
+}
+div.leftPlace{
+	width: 200px;
+	height: 550px;
+	background-image:url("../../style/image/left_right.png");
+	margin-left:10px;
+	margin-top:10px;
+	float: left;
+}
+div.back_left{
+	width: 25px;
+	height: 550px;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+	
+}
+div.back_top{
+	width: 250px;
+	height: 25px;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+}
+div.back_bottom{
+	width: 250px;
+	height: 25px;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+}
+div.back_right{
+	width: 25px;
+	height: 550px;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+}
+div.centerDiv{
+	width: 250px;
+	height: 550px;
+	float: left;
+}
+div.back_center{
+	width: 250px;
+	height: 500px;
+	float: left;
+}
+div.back_center_nothing{
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+div.back_center_diamonds{
+	width: 25px;
+	height: 25px;
+	background:#FF6600;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+}
+div.tetrisPlace{
+	width: 300px;
+	height: 550px;
+	margin-left:10px;
+	margin-top:10px;
+	float: left;
+}
+
+div.rightPlace{
+	width: 200px;
+	height: 550px;
+	background-image:url("../../style/image/left_right.png");
+	margin-top:10px;
+	margin-right:10px;
+	float: right;
+}
+div.right_next{
+	width: 180px;
+	height: 250px;
+	background-image:url("../../style/image/right_next.png");
+	margin-left:10px;
+	margin-top:10px;
+	font-size:20px;
+	color:white;
+	float: left;
+}
+div.pause_start_btn{
+	width: 100px;
+	height: 50px;
+	background-image:url("../../style/image/pause_start.png");
+	margin-left:40px;
+	margin-top:10px;
+	font-size:40px;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	float: left;
+}
+div.pause_start_over{
+	width: 100px;
+	height: 50px;
+	background-image:url("../../style/image/pause_start_over.png");
+	margin-left:40px;
+	margin-top:10px;
+	font-size:40px;
+	text-align:center;
+	cursor:pointer;
+	color:white;
+	float: left;
+}
+div.nextDiamonds{
+	width: 180px;
+	height: 180px;
+	font-size:20px;
+	color:white;
+	float: left;
+}
+div.next_right_nothing{
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+div.next_right_diamonds{
+	width: 25px;
+	height: 25px;
+	background:green;
+	background-image:url("../../style/image/ahead1.png");
+	float: left;
+}
+div.diamonds{
+	width: 100px;
+	height: 100px;
+	margin-left:40px;
+	margin-top:15px;
+	float: left;
+}
+div.right_score{
+	width: 180px;
+	height: 250px;
+	background-image:url("../../style/image/right_next.png");
+	margin-left:10px;
+	margin-top:25px;
+	font-size:30px;
+	font-style:normal;
+	color:white;
+	float: left;
+}
+input{
+	width: 85px;
+	height: 40px;
+	font-size:20px;
+	border-color:transparent ;
+	background-color : transparent ;
+	float: right;
+}
+span{
+	font-size:20px;
+	margin-top:10px;
+	float: left;
+}
+/*--------------jquerui--------------*/
+#draggable { width: 16em; padding: 0 1em; }
+#draggable ul li { margin: 1em 0; padding: 0.5em 0; }
+* html #draggable ul li { height: 1%; }
+#draggable ul li span.ui-icon { float: left; }
+#draggable ul li span.count { font-weight: bold; }

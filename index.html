@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD LEVEL1//EN">
+<html>
+<head>
+<title>Tetris</title>
+<meta http-equiv="keywords" content="tetris,俄罗斯方块,网页游戏">
+<meta http-equiv="description" content="我的俄罗斯方块">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="./script/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="./script/layout.js"></script>
+<script type="text/javascript" src="./script/data.js"></script>
+<script type="text/javascript" src="./script/event.js"></script>
+<script type="text/javascript" src="./script/device.js"></script>
+<script type="text/javascript" src="./script/ReceiveSendMsg.js"></script>
+<link rel="stylesheet" type="text/css" href="./style/css/tetris.css">
+
+</head>
+<body>
+	<div class="header">
+		<div class="dontmove">
+			<div class="logo"></div>
+			<div class="header_title">
+				<a href="../gallery.html" onclick="return confirm('你确定要离开此页面吗？')">
+					泊 格 创 意 </a>
+			</div>
+		</div>
+	</div>
+	<div style="clear: none;">
+		<div class="allPlace" id="bgPalce">
+			<div class="leftPlace">
+				<div class="left_history">
+					<div style="color: white;">
+						<span style="margin-left: 10px;">操作说明：</span>
+					</div>
+				</div>
+				<div class="right_score" id="left_view">
+					<div align="center"
+						style="margin-top: 15px;width: 180px;height: 50px;">
+						<span></span><span id="his1">变形：ctrl</span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span></span><span id="his">暂停：↑ or W</span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span></span><span id="his">左右：←→ or AD</span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span></span><span id="his">快速下降：↓ or S</span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>时间：</span><span id="startTime"></span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>空行：</span><span id="emptyLine"></span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>待消行：</span><span id="waitRemove"></span>
+					</div>
+				</div>
+			</div>
+			<div class="tetrisPlace">
+				<div class="back_left"></div>
+				<div class="centerDiv" id="allDiamonds">
+					<div class="back_top"></div>
+					<div class="back_center" id="back_center"></div>
+					<div class="back_bottom"></div>
+				</div>
+				<div class="back_right"></div>
+			</div>
+			<div class="rightPlace">
+				<div class="right_next">
+					<div class="nextDiamonds">
+						<div align="center" style="margin-top: 15px;">下一个</div>
+						<div class="diamonds" id="diamonds"></div>
+					</div>
+					<div class="pause_start_btn" id="pause_start">开始</div>
+				</div>
+				<div class="right_score">
+					<div align="center"
+						style="margin-top: 15px;width: 180px;height: 50px;">
+						<span>成绩：</span><span id="score1"></span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>得分：</span><span id="score2"></span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>消行：</span><span id="score3"></span>
+					</div>
+					<div align="left"
+						style="margin-top: 10px;width: 180px;height: 50px;">
+						<span>最佳：</span><span id="score4"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="messages" id="messages">
+			<iframe name="frame_message" class="msg_frame"></iframe>
+			<div class="msg_textarea">
+				<textarea style="width: 400px;height: 80px;" name="msg_txt_input"></textarea>
+				<input type="button" name="send" value="发送" class="msg_send_btn" id="msg_send_btn">
+			</div>
+			
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="wrapper">
+			<div class="bottom_left">Copyright - boge.site</div>
+		</div>
+	</div>
+
+</body>
+</html>
