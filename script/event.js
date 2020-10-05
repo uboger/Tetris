@@ -41,6 +41,9 @@ function keyDown(e){
         case keyBorder.ctrl:
           diamondsObj.changeDir();
           return false;
+
+        default:
+            return  false;
     }
 
 }
